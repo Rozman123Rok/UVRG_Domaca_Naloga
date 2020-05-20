@@ -1,0 +1,9 @@
+D:\Faks\02.Semester\UVRG\Domaca Naloga\UVRG_Domaca_Naloga\Domaca_naloga\Domaca_naloga\bin\Debug\Domaca_naloga.exe.config
+D:\Faks\02.Semester\UVRG\Domaca Naloga\UVRG_Domaca_Naloga\Domaca_naloga\Domaca_naloga\bin\Debug\Domaca_naloga.exe
+D:\Faks\02.Semester\UVRG\Domaca Naloga\UVRG_Domaca_Naloga\Domaca_naloga\Domaca_naloga\bin\Debug\Domaca_naloga.pdb
+D:\Faks\02.Semester\UVRG\Domaca Naloga\UVRG_Domaca_Naloga\Domaca_naloga\Domaca_naloga\obj\Debug\Domaca_naloga.csprojAssemblyReference.cache
+D:\Faks\02.Semester\UVRG\Domaca Naloga\UVRG_Domaca_Naloga\Domaca_naloga\Domaca_naloga\obj\Debug\Domaca_naloga.Form1.resources
+D:\Faks\02.Semester\UVRG\Domaca Naloga\UVRG_Domaca_Naloga\Domaca_naloga\Domaca_naloga\obj\Debug\Domaca_naloga.Properties.Resources.resources
+D:\Faks\02.Semester\UVRG\Domaca Naloga\UVRG_Domaca_Naloga\Domaca_naloga\Domaca_naloga\obj\Debug\Domaca_naloga.csproj.GenerateResource.cache
+D:\Faks\02.Semester\UVRG\Domaca Naloga\UVRG_Domaca_Naloga\Domaca_naloga\Domaca_naloga\obj\Debug\Domaca_naloga.exe
+D:\Faks\02.Semester\UVRG\Domaca Naloga\UVRG_Domaca_Naloga\Domaca_naloga\Domaca_naloga\obj\Debug\Domaca_naloga.pdb
