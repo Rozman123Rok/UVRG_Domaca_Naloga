@@ -110,30 +110,16 @@ namespace Domaca_naloga
 
         private bool Na_Robu()
         {
-            Pen pen = new Pen(ForeColor); // za risanje daljic med tockama
+            Pen pen = new Pen(Color.Red); // za risanje daljic med tockama
             Graphics g = this.CreateGraphics();
-            /*
-             float xDiff = x2 - x1;
-             float yDiff = y2 - y1;
-                return Math.Atan2(yDiff, xDiff) * 180.0 / Math.PI;
-             */
 
             for (int i = 0; i < tocke.Count()-1; i++) {
-                // let AB = Math.sqrt(Math.pow(A.x - C.x, 2) + Math.pow(A.y - C.y, 2));
-                float t1_t = (float)Math.Sqrt(Math.Pow(tocke[i].x - tocka.x, 2) + Math.Pow(tocke[i].y - tocka.y, 2));
-                float t2_t = (float)Math.Sqrt(Math.Pow(tocke[i + 1].x - tocka.x, 2) + Math.Pow(tocke[i + 1].y - tocka.y, 2));
-                float t1_t2 = (float)Math.Sqrt(Math.Pow(tocke[i].x - tocke[i + 1].x, 2) + Math.Pow(tocke[i].y - tocke[i + 1].y, 2));
-                // Math.acos((BC * BC + AC * AB - AC * AB) / (2 * BC * AB)) * 180 / Math.PI;
-                float rez = (float)Math.Acos((t2_t * t2_t + t1_t2 * t1_t - t1_t2 * t1_t) / (2 * t2_t * t1_t) * 180 / Math.PI);
-                /*
-                float xDiff_1 = tocke[i].x - tocka.x;
-                float yDiff_1 = tocke[i].y - tocka.y;
-                float xDiff_2 = tocke[i+1].x - tocka.x;
-                float yDiff_2 = tocke[i+1].y - tocka.y;
-                float a = (float)(Math.Atan2(yDiff_1, xDiff_1) * 180.0 / Math.PI);
-                float b = (float)(Math.Atan2(yDiff_2, xDiff_2) * 180.0 / Math.PI);
-                */
-                //MessageBox.Show("Kot: " + rez);
+
+                double a = Math.Pow(tocka.x - tocke[i].x, 2) + Math.Pow(tocka.y - tocke[i].y, 2);
+                double b = Math.Pow(tocka.x - tocke[i + 1].x, 2) + Math.Pow(tocka.y - tocke[i + 1].y, 2);
+                double c = Math.Pow(tocke[i + 1].x - tocke[i].x, 2) + Math.Pow(tocke[i + 1].y - tocke[i].y, 2);
+                double rez = Math.Acos((a + b - c) / Math.Sqrt(4 * a * b)) * 180 / Math.PI;
+                //MessageBox.Show("Rez " + rez);
                 if ( rez >= 178) {
                     g.DrawLine(pen, tocke[i].x, tocke[i].y, tocke[i+1].x, tocke[i+1].y);
                     return true;
